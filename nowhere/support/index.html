@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — NowHere</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fff;
+            padding: 3rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
+        .subtitle { color: #86868b; margin-bottom: 2rem; }
+        h2 { font-size: 1.15rem; font-weight: 600; margin: 2rem 0 0.5rem; }
+        h3 { font-size: 1rem; font-weight: 600; margin: 1.25rem 0 0.25rem; color: #1d1d1f; }
+        p, li { color: #333; }
+        ul { padding-left: 1.25rem; margin: 0.5rem 0; }
+        li { margin: 0.25rem 0; }
+        a { color: #06c; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-box {
+            background: #f5f5f7;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1rem 0 0;
+        }
+        .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e5; color: #86868b; font-size: 0.875rem; }
+    </style>
+</head>
+<body>
+    <h1>Support</h1>
+    <p class="subtitle">NowHere — GPS for Any Camera</p>
+
+    <h2>Contact</h2>
+    <div class="contact-box">
+        <p>Questions, bug reports, or feature requests — email us at <a href="mailto:hello@hyperpower.dev">hello@hyperpower.dev</a>. We aim to reply within two business days.</p>
+    </div>
+
+    <h2>Getting Started</h2>
+    <ol style="padding-left: 1.25rem;">
+        <li>Open NowHere and tap the record button to start a GPS track before you begin shooting.</li>
+        <li>Shoot photos on any camera — NowHere works with every camera that records timestamps, including iPhone, Leica, Hasselblad, Fujifilm, Sony, Canon, and Nikon.</li>
+        <li>When you're done, tap stop. Open the Tracks tab to review the recording.</li>
+        <li>Go to Match, select the track and your photos, then tap Write to save GPS coordinates into each image's EXIF.</li>
+    </ol>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>My photos didn't get GPS coordinates — what went wrong?</h3>
+    <p>The most common cause is a camera clock that's out of sync with your phone. In the Match screen, use the time offset slider to shift photo timestamps forward or backward until they align with your track. NowHere also skips photos taken outside the time window of the selected track.</p>
+
+    <h3>GPS recording stops when I switch apps</h3>
+    <p>For reliable background recording, go to <strong>Settings → Background Location → Mode</strong> and choose <strong>Always</strong>. iOS is less likely to terminate the app in this mode, which is ideal for long photo sessions. Note that force-quitting the app will always stop recording, regardless of mode.</p>
+
+    <h3>Why does GPS recording drain battery?</h3>
+    <p>NowHere only uses the GPS hardware while actively recording a track. When recording is stopped, no location data is collected and no additional battery is used. Both "While Using" and "Always" modes use identical GPS hardware, so battery usage is the same.</p>
+
+    <h3>My Apple Watch isn't recording independently</h3>
+    <p>The Apple Watch companion app records its own track, which you can transfer to your iPhone when both devices are nearby. Make sure the NowHere watch app is installed and that Workout permissions are granted. If recording stops when your wrist is down, the app uses HealthKit workout sessions to keep GPS active — check that workout permission is enabled.</p>
+
+    <h3>How do I restore my NowHere Pro purchase?</h3>
+    <p>Go to <strong>Settings → Restore Purchases</strong> inside the app. Sign in with the Apple ID that made the original purchase. Non-consumable purchases survive app reinstalls and sync across your devices signed into the same Apple ID.</p>
+
+    <h3>Can I import or export GPX files?</h3>
+    <p>Yes — NowHere Pro supports GPX import and export. Exported files work with Lightroom Classic, Google Earth, Garmin BaseCamp, and most other geotagging tools. Imported tracks from other recorders can be used to geotag photos the same way as tracks recorded in NowHere.</p>
+
+    <h3>Which photo formats are supported?</h3>
+    <p>NowHere writes GPS data into JPEG, HEIC, and most RAW formats recognized by iOS (including DNG, ARW, CR3, NEF, RAF). The original photo is preserved; GPS coordinates are added to existing EXIF metadata without re-encoding the image.</p>
+
+    <h3>How accurate is the GPS track?</h3>
+    <p>Accuracy depends on GPS conditions — open sky is best; dense urban areas and indoor environments are less reliable. In <strong>Settings → Recording → Max Accuracy Filter</strong>, you can discard points with poor accuracy to keep your tracks clean.</p>
+
+    <h3>Is my location or photo data sent anywhere?</h3>
+    <p>No. All data stays on your device. See our <a href="/nowhere/privacy/">Privacy Policy</a> for full details.</p>
+
+    <h2>Still need help?</h2>
+    <p>Email <a href="mailto:hello@hyperpower.dev">hello@hyperpower.dev</a> with your iOS and watchOS versions, a description of what happened, and any relevant screenshots.</p>
+
+    <div class="footer">
+        <p>Last updated: April 24, 2026</p>
+    </div>
+</body>
+</html>
